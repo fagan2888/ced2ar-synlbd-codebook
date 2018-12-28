@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<codeBook xmlns:act="http://ced2ar.org/ns/activities#" xmlns:ced2ar="http://ced2ar.org/ns/core#" xmlns:RePEc="https://ideas.repec.org/#" xmlns:exn="http://ced2ar.org/ns/external#" xmlns:repeca="https://ideas.repec.org/e/#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:tr="http://example.com/ns/tr#" xmlns:ex="http://example.com/ns/ex#" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:saxon="http://xml.apache.org/xslt" xmlns:ns0="http://purl.org/dc/elements/1.1/" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:dcmitype="http://purl.org/dc/dcmitype/" xmlns:dc="http://purl.org/dc/terms/" xmlns="ddi:codebook:2_5" xsi:schemaLocation="ddi:codebook:2_5 http://www.ncrn.cornell.edu/docs/ddi/2.5.NCRN.P/schemas/codebook.xsd">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Synthetic Longitudinal Business Database</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="Cornell University">Virtual RDC</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="Cornell NCRN Project">Lars Vilhuber</producer>
+        <copyright>Cornell NCRN Project</copyright>
+        <prodDate date="2014-01-06">January 6th, 2014</prodDate>
+        <prodPlac>Cornell Institute for Social and Economic Research (CISER), Cornell University, Ithaca NY<ExtLink URI="http://ciser.cornell.edu"/>
+        </prodPlac>
+        <software>CED2AR, Version 1.0</software>
+        <software>The Comprehensive Extensible Data Documentation and Access Repository 2.5</software>
+        <software>The Comprehensive Extensible Data Documentation and Access Repository 2.5</software>
+        <fundAg abbr="NSF">National Science Foundation (NSF)</fundAg>
+        <grantNo agency="National Science Foundation">1131848</grantNo>
+      </prodStmt>
+      <distStmt source="producer">
+        <distrbtr URI="http://www.ncrn.cornell.edu" abbr="Cornell NCRN Project">NSF-Census Research Network - Cornell node</distrbtr>
+        <distrbtr URI="http://www.ciser.cornell.edu" abbr="CISER">Cornell Institute for Social and Economic Research</distrbtr>
+        <distrbtr URI="http://www.ilr.cornell.edu/ldi" abbr="LDI">Labor Dynamics Institute</distrbtr>
+        <distDate date="2014-01-06">January 6, 2014</distDate>
+      </distStmt>
+      <verStmt>
+        <version date="2016-11-11 11:47:26 (auto-generated)">Revision: 459</version>
+      </verStmt>
+      <biblCit>Comprehensive Extensible Data Documentation and Access Repository. Codebook for the Synthetic LBD Version 2.0 [Codebook file]. Cornell Institute for Social and Economic Research and Labor Dynamics Institute [distributor]. Cornell University, Ithaca, NY, 2013</biblCit>
+    </citation>
+    <docSrc>
+      <titlStmt>
+        <titl>SynLBD</titl>
+      </titlStmt>
+    </docSrc>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>Synthetic Longitudinal Business Database</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty>United States Department of Commerce. Bureau of the Census.</AuthEnty>
+        <AuthEnty>Internal Revenue Service.</AuthEnty>
+        <AuthEnty>Cornell University. Labor Dynamics Institute.</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="Census">United States Department of Commerce, Bureau of the Census</producer>
+        <producer abbr="Duke">Duke University</producer>
+        <producer abbr="LDI">Cornell University, Labor Dynamics Institute</producer>
+        <copyright>none</copyright>
+        <prodPlac>Washington, DC, USA</prodPlac>
+        <fundAg>National Science Foundation</fundAg>
+        <grantNo>0427889 and 1042181</grantNo>
+      </prodStmt>
+      <distStmt>
+        <distrbtr URI="http://www2.vrdc.cornell.edu/news/synthetic-data-server/" abbr="CU">Cornell University</distrbtr>
+        <distrbtr URI="https://www.census.gov/ces/dataproducts/synlbd/index.html" abbr="Census">U.S. Census Bureau</distrbtr>
+        <distDate date="2013-10-16">16 October 2013</distDate>
+      </distStmt>
+      <verStmt>
+        <version>2.0.2</version>
+      </verStmt>
+      <biblCit>U.S. Census Bureau. Synthetic Longitudinal Business Database: Version 2.0 [Computer file]. Washington DC; Cornell University, Synthetic Data Server [distributor], Ithaca, NY, 2013</biblCit>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <keyword>establishments dynamics</keyword>
+      </subject>
+      <abstract>In most countries, national statistical agencies do not release establishment-level business microdata, because doing so represents too large a risk to establishments' confidentiality. One approach with the potential for overcoming these risks is to release synthetic data; that is, the released establishment data are simulated from statistical models designed to mimic the distributions of the underlying real microdata. The Synthetic Longitudinal Business Database (SynLBD) is the synthetic data version of the Longitudinal Business Database (LBD), an annual economic census of establishments in the United States comprising more than 20 million records dating back to 1976. More information is available at https://www.census.gov/ces/dataproducts/synlbd/index.html.
+        
+        In this codebook, variables are noted as "blanked" if they are available on the confidential version but have been removed from the synthetic version; "synthetic" if the confidential values have been synthesized and released on the synthetic version.</abstract>
+      <sumDscr>
+        <nation abbr="USA">United States of America</nation>
+        <geogCover>National</geogCover>
+        <anlyUnit>Establishment</anlyUnit>
+        <universe>All employer establishments</universe>
+      </sumDscr>
+    </stdyInfo>
+    <method>
+      <dataColl>
+        <collMode>Sampling from posterior predictive distribution<ExtLink URI="https://www.census.gov/ces/pdf/SynLBD_Kinney_et_al_2011_Appendix.pdf" title="LBD Synthesis Procedures"/>
+        </collMode>
+        <sources/>
+      </dataColl>
+    </method>
+    <dataAccs>
+      <useStmt>
+        <confDec URI="https://www.census.gov/ces/dataproducts/synlbd/accesslbd.html">In order to access the Synthetic LBD, users should apply for a free account on the Synthetic Data Server (SDS) housed at the VirtualRDC at Cornell University. Application forms can be found at https://www.census.gov/ces/dataproducts/synlbd/accesslbd.html. Application decisions are based solely on feasibility,  determined by evaluating whether the data necessary to conduct the analysis are included on the SynLBD Beta file. Decisions generally occur within 10 business days.</confDec>
+        <specPerm URI="https://www.census.gov/ces/dataproducts/synlbd/accesslbd.html">The SynLBD files have been cleared by the Census Bureau Disclosure Review Board and IRS for use by individuals wihtout Census Bureau Special Sworn Status and outside of Census Bureau facilities. Establishments in the SynLBD are fully synthesized using statistical models, and the SynLBD contains no data from actual establishments. Comparison at the establishment level shows SynLBD data differ substantially from the actual data. Modeling preserves variable relationships while protecting establishment identity.</specPerm>
+        <restrctn>The data can only be used on the VirtualRDC Synthetic Data Server http://www.vrdc.cornell.edu/sds/ at Cornell University. While no SynLBD data downloads are permitted at this time, users do not have to operate behind the Census Bureau firewall to access this server.</restrctn>
+        <contact>ces.synthetic.data.use@census.gov</contact>
+        <citReq>Please use the following language in published work that make use of this dataset: "The creation of the Synthetic LBD was made possible through NSF Grant #0427889. Access to the Synthetic LBD was made possible through NSF Grant #1042181." Please also cite Kinney et al (2011) and use the bibliographic citation for the dataset provided in this document.</citReq>
+        <disclaimer>Establishments in the SynLBD are fully synthesized using statistical models, and the SynLBD contains no data from actual establishments. Comparison at the establishment level shows SynLBD data differ substantially from the actual data. Modeling preserves variable relationships while protecting establishment identity. Because the SynLBD has not been fully validated, relationships between SynLBD variables may not correspond to the relationships in the underlying confidential microdata. Unless validated, there is no guarantee results from the SynLBD reflect results from the underlying confidential data.     Researchers are strongly encouraged to request result validation prior to publishing results based on the SynLBD. Validation occurs as part of an internal Census Bureau process to improve current beta data products, and is  free, as resources permit. (See https://www.census.gov/ces/dataproducts/synlbd/validatingresults.html)</disclaimer>
+      </useStmt>
+    </dataAccs>
+    <dataAccs ID="restricted"/>
+    <dataAccs ID="released"/>
+    <othrStdyMat>
+      <relMat>https://www.census.gov/ces/pdf/SynLBD_Codebook.pdf</relMat>
+      <relPubl>Kinney, Satkartar K., Jerome P. Reiter, Arnold P. Reznek, Javier Miranda, Ron S. Jarmin and John M. Abowd. 2011. 
+     
+CES WP-11-04
+
+In most countries, national statistical agencies do not release establishment-level business
+microdata, because doing so represents too large a risk to establishments' confidentiality. One approach with the potential for overcoming these risks is to release synthetic data; that is, the released establishment data are simulated from statistical models designed to mimic the distributions of the underlying real microdata. In this article, we describe an application of this strategy to create a public use file for the Longitudinal Business Database, an annual economic census of establishments in the United States comprising more than 20 million records dating back to 1976. The U.S. Bureau of the Census and the Internal Revenue Service recently approved the release of these synthetic microdata for public use, making the synthetic Longitudinal Business Database the first-ever business microdata set publicly released in the United States. We describe how we created the synthetic data, evaluated analytical validity, and assessed disclosure risk.<ExtLink URI="https://www.census.gov/ces/pdf/CES-WP-11-04.pdf"/>
+      </relPubl>
+    </othrStdyMat>
+  </stdyDscr>
+  <fileDscr ID="F1" URI="synlbd1997c.dta">
+    <fileTxt>
+      <fileName>synlbd1997c.dta</fileName>
+      <fileStrc type="relational">
+        <recGrp keyvar="V1 V28 V12 V23"/>
+      </fileStrc>
+      <dimensns>
+        <caseQnty>all</caseQnty>
+        <varQnty>28</varQnty>
+      </dimensns>
+      <fileType>Stata</fileType>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr>
+    <varGrp ID="_1" name="Blanked Variables" var="V8 V9 V10 V11 V12 V13 V14 V15 V16 V17 V18 V19 V20 V21 V22 V23 V24 V25 V26 V27" xml-lang="xml-lang339">
+      <labl>Blanked Variables</labl>
+      <txt>Variables that are not available on the Synthetic LBD, but are available on the confidential LBD, are noted as "blanked". The data files on the Synthetic Data Server do contain these variables, but all values have been removed. Users can functionally test their programs to use these variables.</txt>
+    </varGrp>
+    <varGrp ID="_2" name="Synthetic Variables" var="V2 V3 V5 V6 V7" xml-lang="xml-lang339">
+      <labl>Synthetic Variables</labl>
+      <txt>Synthetic variables have had confidential values synthesized. On the Synthetic LBD, as the name suggests, the synthetic values have been released.</txt>
+    </varGrp>
+    <varGrp ID="_3" name="Identifiers" var="V1 V12 V4 V28" xml-lang="xml-lang339">
+      <labl>Identifiers</labl>
+      <txt>Identifiers allow for unique identification of records, and/or linkage to other datasets (foreign keys).</txt>
+    </varGrp>
+    <var ID="V1" files="F1" intrvl="discrete" name="lbdnum">
+      <location width="12"/>
+      <labl>(synthetic) LBD Number</labl>
+      <txt>Longitudinal establishment identifier. Can be used to track establishment units over time.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V2" dcml="0" files="F1" intrvl="contin" name="emp">
+      <location width="12"/>
+      <labl>(synthetic) March 12 Employment</labl>
+      <txt>Paid employment consists of full and part-time employees, including salaried officers and executives of corporations, who were on the payroll in the pay period including March 12. Included are employees on sick leave, holidays, and vacations; not included are proprietors and partners of unincorporated businesses. Employment refers to paid employment at the establishment where business is conducted. Note, this will correspond to firm employment only for single-unit establishment firms. Reported to the Internal Revenue Service (IRS) on Form 941. In
+some cases this value is imputed due to missing or invalid data.</txt>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="V3" dcml="0" files="F1" intrvl="contin" name="pay">
+      <location width="12"/>
+      <labl>(synthetic) Reported Annual Payroll (in $1,000)</labl>
+      <txt>Total annual payroll includes all forms of compensation, such as salaries, wages, commissions, bonuses, vacation allowances, sick-leave pay, and the value of payments in kind (e.g., free meals and lodgings) paid during the year to all employees. Sum of quarterly IRS Form 941 payroll for the year. Missing or invalid 941 data 
+is replaced with imputed values.</txt>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="V4" files="F1" intrvl="discrete" name="sic3">
+      <location width="3"/>
+      <labl>(observed, computed) SIC3 code</labl>
+      <sumStat access="released" type="vald">all</sumStat>
+      <sumStat access="released" type="invd">0</sumStat>
+      <txt>Three digit Standard Industrial Classification code.</txt>
+      <concept vocabURI="http://www.osha.gov/pls/imis/sic_manual.html">Standard Industrial Classification</concept>
+      <varFormat schema="other" type="character"/>
+      <notes>Neat</notes>
+    </var>
+    <var ID="V5" dcml="0" files="F1" intrvl="discrete" name="mu">
+      <location width="12"/>
+      <labl>(synthetic) Single-Multi Identifier</labl>
+      <valrng>
+        <range max="1" min="0"/>
+      </valrng>
+      <sumStat access="released" type="vald">all</sumStat>
+      <sumStat access="released" type="invd">0</sumStat>
+      <txt>Indicator for whether the establishment belongs to a firm composed of two or more establishments. A value of 1 indicates the establishment is a member of a firm composed of two or more establishments. A value of 0 indicates the establishment is the only member ofthe firm.</txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>Establishment is the only member of the firm</labl>
+        <catStat access="released" type="freq">8000000</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>Establishment is a member of a firm composed of two or more establishments</labl>
+        <catStat access="released" type="freq">1000000</catStat>
+      </catgry>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="V6" dcml="0" files="F1" intrvl="contin" name="firstyear">
+      <location width="12"/>
+      <labl>(synthetic) First Year Establishment is Observed</labl>
+      <valrng access="released">
+        <range max="2000" min="1975"/>
+      </valrng>
+      <sumStat access="released" type="vald">all</sumStat>
+      <sumStat access="released" type="invd">0</sumStat>
+      <sumStat access="released" type="min">1975</sumStat>
+      <sumStat access="released" type="max">2000</sumStat>
+      <txt>Indicator for the first year the establishment is observed in the data (birth year). This variable is left censored at 1976. In conjunction with LASTYEAR, allows users to quickly determine the tenure of an establishment from any point in the data series.</txt>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="V7" dcml="0" files="F1" intrvl="discrete" name="lastyear">
+      <location width="12"/>
+      <labl>(synthetic) Last Year Establishment is Observed</labl>
+      <valrng>
+        <range max="2000" min="1976"/>
+      </valrng>
+      <txt>Indicator for the last year the establishment is observed (death year). This variable is right censored at the last year of the data. In conjunction with FIRSTYEAR, allows users to quickly determine the tenure of an establishment from any point in the data series.</txt>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="V8" files="F1" intrvl="discrete" name="act">
+      <location width="1"/>
+      <labl>(blanked) Activity Code.</labl>
+      <qstn>
+        <p>blababalb</p>
+      </qstn>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V9" files="F1" intrvl="discrete" name="bestsic">
+      <location width="1"/>
+      <labl>(blanked) Best SIC code</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V10" files="F1" intrvl="discrete" name="bestnaics">
+      <location width="1"/>
+      <labl>(blanked) Best NAICS code</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V11" dcml="0" files="F1" intrvl="discrete" name="cbp">
+      <location width="12"/>
+      <labl>(blanked) Indicator: used in County Business Patterns</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD. Indicates that an observation was used in the tabulation of the County Business Patterns</txt>
+      <catgry missing="Y">
+        <catValu>Sysmiss</catValu>
+        <catStat type="freq">all</catStat>
+      </catgry>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="V12" files="F1" intrvl="discrete" name="cfn">
+      <location width="10"/>
+      <labl>(blanked) Census File Number</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD. Links to other Economic microdata</txt>
+      <catgry>
+        <catValu>0123456789</catValu>
+      </catgry>
+      <catgry>
+        <catValu>1234567890</catValu>
+      </catgry>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V13" files="F1" intrvl="discrete" name="county">
+      <location width="3"/>
+      <labl>(blanked) County FIPS codes</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD. County FIPS code. It is not possible to compute statistics at the state or county level.</txt>
+      <catgry/>
+      <concept vocabURI="http://www.itl.nist.gov/fipspubs/co-codes/states.txt">FIPS code</concept>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V14" files="F1" intrvl="discrete" name="firstflag">
+      <location width="1"/>
+      <labl>(blanked) First Link Flag</labl>
+      <txt>Indicator for first link. Only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V15" files="F1" intrvl="discrete" name="flaga">
+      <location width="1"/>
+      <labl>(blanked) Type of Link Flag</labl>
+      <txt>Identifies the type of link. Only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V16" files="F1" intrvl="discrete" name="flagb">
+      <location width="1"/>
+      <labl>(blanked) Birth-Death-Continuer Link Flag</labl>
+      <txt>Identifies if the link is for birth/death/continuing establishment. Only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V17" files="F1" intrvl="discrete" name="lastflag">
+      <location width="1"/>
+      <labl>(blanked) Last Link Flag</labl>
+      <txt>Only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V18" files="F1" intrvl="discrete" name="lfo">
+      <location width="1"/>
+      <labl>(blanked) Legal Form of Organization</labl>
+      <txt>Identifies the legal form of the organization. Only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V19" files="F1" intrvl="discrete" name="lfo1">
+      <location width="1"/>
+      <labl>(blanked) LFO1</labl>
+      <txt>Processing variable. Only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V20" files="F1" intrvl="discrete" name="mfsic1">
+      <location width="1"/>
+      <labl>(blanked) Most Frequent SIC 1</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V21" files="F1" intrvl="discrete" name="pdiv">
+      <location width="1"/>
+      <labl>(blanked) Processing (Economic) Division Code</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V22" files="F1" intrvl="discrete" name="rapf">
+      <location width="1"/>
+      <labl>(blanked) Reported Annual Payroll Flag</labl>
+      <txt>Only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V23" dcml="0" files="F1" intrvl="discrete" name="recnum">
+      <location width="12"/>
+      <labl>(blanked) SSEL Record Number</labl>
+      <txt>Links to BR. Only available on confidential LBD, 
+        Variable not present on Synthetic LBD.</txt>
+      <catgry missing="Y">
+        <catValu>Sysmiss</catValu>
+        <catStat type="freq">all</catStat>
+      </catgry>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="V24" files="F1" intrvl="discrete" name="sic">
+      <location width="1"/>
+      <labl>(blanked) Standard Industrial Classification Code</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD. Detailed SIC code</txt>
+      <concept vocabURI="http://www.osha.gov/pls/imis/sic_manual.html">Standard Industrial Classification</concept>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V25" files="F1" intrvl="discrete" name="sone">
+      <location width="1"/>
+      <labl>processing variable (to be dropped in future version)</labl>
+      <txt/>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V26" files="F1" intrvl="discrete" name="state">
+      <location width="2"/>
+      <labl>(blanked) State FIPS codes</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD. It is not possible to compute statistics at the state or county level.</txt>
+      <catgry>
+        <catStat type="freq">all</catStat>
+      </catgry>
+      <concept vocabURI="http://www.itl.nist.gov/fipspubs/co-codes/states.txt">FIPS state code</concept>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V27" files="F1" intrvl="discrete" name="toc">
+      <location width="1"/>
+      <labl>(blanked) Type of Operation Code</labl>
+      <txt>Variable not present on Synthetic LBD, only available on confidential LBD.</txt>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="V28" dcml="0" files="F1" intrvl="discrete" name="yr">
+      <location width="12"/>
+      <labl>(computed) Year</labl>
+      <valrng>
+        <range max="2001" min="1976"/>
+      </valrng>
+      <txt>Implicit in file name, was added on SynLBD 2.0.2</txt>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+  </dataDscr>
+</codeBook>
